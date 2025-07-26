@@ -5,7 +5,7 @@ Frontend built using Next.js + TailwindCSS to interact with a FastAPI backend an
 ##  Setup Instructions
 
 ### 1. Clone the repository
-git clone https://github.com/ndakalajulius/ai-qa-frontend.git
+git clone https://github.com/ndakalajulius/QFrontend.git
 cd ai-qa-frontend
 2. Install dependencies
 npm install
