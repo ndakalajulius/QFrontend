@@ -1,37 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Q&A Frontend (Next.js + Tailwind CSS)
 
-## Getting Started
+Frontend built using Next.js + TailwindCSS to interact with a FastAPI backend and OpenAI API.
 
-First, run the development server:
+## 🚀 Setup Instructions
 
+### 1. Clone the repository
 ```bash
+git clone https://github.com/ndakalajulius/ai-qa-frontend.git
+cd ai-qa-frontend
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Setup environment variables
+bash
+Copy
+Edit
+cp .env.local.example .env.local
+4. Start development server
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔧 Configuration
+Ensure the base URL matches your backend:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+env
+Copy
+Edit
+NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
+yaml
+Copy
+Edit
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ✅ **3. Prompt Documentation (Add to both repos or one shared one)**
 
-## Learn More
+**📄 `prompt_log.md`**
+```markdown
+# Prompt Documentation
 
-To learn more about Next.js, take a look at the following resources:
+### Prompt 1
+**User**: What is artificial intelligence?  
+**Response**: Artificial Intelligence (AI) refers to the simulation of human intelligence in machines...
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prompt 2
+**User**: Explain machine learning like I’m 10.  
+**Response**: Machine learning is like teaching a computer to learn from examples...
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# QFrontend
+
+
+
